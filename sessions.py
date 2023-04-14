@@ -17,7 +17,7 @@ def login():
    if request.method == 'POST':
       session['username'] = request.form['username']
       return redirect(url_for('index'))
-   return '<form action = "" method = "post"><p><input type = text name = username/></p><p<<input type = submit value = Login/></p></form>'
+   return """<form action = "" method = "post"><p><input type = text name = username/></p><p<<input type = submit value = Login/></p></form>"""
 
 @app.route('/logout')
 def logout():
